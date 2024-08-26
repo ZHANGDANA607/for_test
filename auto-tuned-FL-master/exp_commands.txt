@@ -1,0 +1,63 @@
+##验证试验:
+python src/run_main.py --model=resnet18 --dataset=cifar --alg=fedavg \
+--diric=1 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64 --arg=1
+
+python src/run_main.py --model=resnet18 --dataset=cifar --alg=fedavg \
+--diric=1 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64 --arg=3
+
+python src/run_main.py --model=resnet18 --dataset=cifar --alg=fedavg \
+--diric=1 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64 --arg=5
+
+python src/run_main.py --model=resnet50 --dataset=cifar100 --alg=fedavg \
+--diric=1 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=resnet18 --dataset=cifar100 --alg=fedavg \
+--diric=1 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+##CIFAR10对比实验:
+python src/run_main.py --model=resnet18 --dataset=cifar --alg=fedavg \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=resnet18 --dataset=cifar --alg=fedprox \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=resnet18 --dataset=cifar --alg=fedadam \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=resnet18 --dataset=cifar --alg=moon \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=resnet18 --dataset=cifar --alg=feddc \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+##MNIST对比实验:
+python src/run_main.py --model=cnn --dataset=mnist --alg=fedavg \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=cnn --dataset=mnist --alg=fedprox \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=cnn --dataset=mnist --alg=fedadam \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=cnn --dataset=mnist --alg=moon \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=cnn --dataset=mnist --alg=feddc \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+##CIFAR100对比实验:
+python src/run_main.py --model=resnet50 --dataset=cifar100 --alg=fedavg \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=resnet50 --dataset=cifar100 --alg=fedprox \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=resnet50 --dataset=cifar100 --alg=fedadam \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=resnet50 --dataset=cifar100 --alg=moon \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
+
+python src/run_main.py --model=resnet50 --dataset=cifar100 --alg=feddc \
+--diric=0.01 --epochs=2000 --optimizer=sgd --exp_name=exp1 --local_bs=64 --local_ep=1 --item_per_user=64
